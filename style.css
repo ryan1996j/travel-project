@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&family=Karla:wght@400;800&family=Poppins:wght@200;400;700&family=Quicksand:wght@300;500;600&family=Source+Sans+Pro:wght@200;300&family=Work+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border;
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+
+}
+
+.head {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.landingpage {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+.sliders {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+
+
+}
+
+.first-slide,
+.second-slide,
+.third-slide {
+    transition: all 1s ease-in;
+}
+
+.first-slide::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(images/landscape-tropical-vacation-palm-summer.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    z-index: -11;
+    transition: all 1s ease-in;
+
+}
+
+.first-slide::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to top, rgba(151, 147, 147, 0), rgba(90, 88, 88, 0.8));
+}
+
+.first-slide-text,
+.second-slide-text,
+.third-slide-text {
+    width: 600px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text {
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.first-slide p,
+.second-slide p,
+.third-slide p {
+    font-size: 30px;
+    font-weight: bold;
+
+
+
+}
+
+.first-slide h2,
+.second-slide h2,
+.third-slide h2 {
+    z-index: 999;
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+    margin: 0;
+
+    text-align: center;
+}
+
+.button {
+    margin-top: 45px;
+}
+
+.second-slide::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(images/nature-3616194.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    z-index: -999;
+    transition: all 1s ease-in;
+}
+
+.third-slide::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(images/river-6519572_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    z-index: -999;
+    transition: all 1s ease-in;
+}
+
+/* popular destination*/
+.popular-destination {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.popular-destination-text {
+    width: 100%;
+
+}
+
+.popular-destination-text h3 {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.main {
+    position: relative;
+    height: 550px;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+
+}
+
+.popular {
+    width: 950px;
+    overflow: hidden;
+
+}
+
+
+
+.card {
+    position: relative;
+    background: #faf7f7;
+    border-radius: 20px;
+    height: 410px;
+    color: black;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 100;
+    width: 300px;
+}
+
+.image {
+    width: 100%;
+    height: 350px;
+
+}
+
+.image img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.content {
+    background-color: #faf7f6;
+    color: white;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+
+
+}
+
+.popular-pagination {
+    position: absolute;
+    top: 550px;
+
+
+}
+
+.popular-pagination .swiper-pagination-bullet {
+    background: #000;
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: rgb(243, 239, 239);
+}
+
+
+
+.popular-button.swiper-button-next,
+.popular-button.swiper-button-prev {
+    opacity: 0.7;
+    width: 100px;
+    color: rgb(248, 239, 239);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+
+}
+
+.popular-button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+
+}
+
+.popular-prev,
+.popular-next {
+
+
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background: #000;
+    color: white;
+}
+
+.popular-button .swiper-button-prev {
+    position: absolute;
+    left: -100px;
+}
+
+.popular-button .swiper-button-prev::after,
+.popular-button .swiper-button-next::after {
+    color: rgb(252, 248, 248);
+    font-size: 16px;
+    margin: 0;
+
+
+
+}
+
+/* banner*/
+.banner-one {
+    width: 100%;
+    height: 350px;
+
+    position: relative;
+}
+
+.banner-one::before {
+    content: "";
+    position: absolute;
+    background-image: url(images/dreamy-asian-tourist-smiling-thinking-holding-covid-international-vaccination-certificate-two-ti.jpg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    z-index: -11;
+}
+
+.banner-one-info {
+    padding: 70px 25px 25px 100px;
+}
+
+.banner-one-info h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.banner-one-info h3 {
+    margin-bottom: 0;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.banner-one-info p {
+    margin-top: 15px;
+}
+
+.banner-one-info button {
+    background-color: rgb(7, 31, 241);
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    border-radius: 25px;
+}
+
+/* Explore
+*/
+.explore-vacation {
+    width: 100%;
+    height: 150vh;
+
+
+
+}
+
+.explore-heading {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+
+}
+
+.explore-heading h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.exolore {
+    width: 90%;
+    margin: auto;
+
+}
+
+.explore-links-group {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+}
+
+.explore-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.explore-links p {
+    font-size: 20px;
+    margin-left: 35px;
+    cursor: pointer;
+    width: 100px;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    border-radius: 5px;
+
+
+}
+
+.exploreActive {
+    background-color: dodgerblue;
+
+
+
+}
+
+.explore-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.explore-card {
+    width: 250px;
+    height: 300px;
+    margin: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.explore-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*image grid
+*/
+.gallery {
+    width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+
+
+}
+
+.gallery-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 130px;
+    grid-gap: 8px;
+}
+
+.grid-image {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.six img {
+    object-position: 50% -30px;
+}
+
+.one img {
+    object-position: 50% 15%;
+}
+
+.one {
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+
+.two {
+    grid-row: 1/4;
+}
+
+.six {
+    grid-row: 3/5;
+    grid-column: 2/2;
+}
+
+.gallery-head {
+    width: 100%;
+    height: 100px;
+
+    text-align: center;
+    padding-top: 15px;
+}
+
+.gallery-head h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+/*counter*/
+.counter {
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+    margin: 0 auto;
+
+
+}
+
+.counter-body {
+    height: 100%;
+    display: flex;
+    font-size: 65px;
+    color: #000;
+    justify-content: center;
+    align-items: end;
+
+
+
+
+}
+
+.counter-info {
+
+    width: 250px;
+    height: 250px;
+    margin-left: 25px;
+}
+
+.counter-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-text p {
+    color: orangered;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.counter-text h3 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* contact us*/
+.contact-us {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    background-color: skyblue;
+}
+
+.logo-section {
+    width: 30%;
+
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+.logo-name {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-name p {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.socialmedia {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.socialmedia i {
+    margin: 25px;
+    font-size: 25px;
+}
+
+.contact-text {
+    display: flex;
+    justify-content: space-around;
+
+    width: 70%;
+
+
+}
